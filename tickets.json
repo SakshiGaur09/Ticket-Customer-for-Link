@@ -1,0 +1,339 @@
+[
+  {
+    "id": "TCK-1001",
+    "subject": "Payment deducted but order not confirmed",
+    "description": "I paid via UPI and the amount left my account, but the order page still shows pending.",
+    "priority": "high",
+    "status": "open",
+    "category": "Billing",
+    "createdAt": "2026-09-23T09:15:00Z",
+    "customer": {
+      "name": "Nidhi Singh",
+      "email": "nidhi.singh@example.com",
+      "phone": "+91 2222888809 ",
+      "location": "New Delhi"
+    },
+    "messages": [
+      {
+        "id": "TCK-1001-1",
+        "sender": "customer",
+        "text": "Money was deducted 20 minutes ago but no confirmation email.",
+        "timestamp": "2026-09-23T09:15:00Z"
+      },
+      {
+        "id": "TCK-1001-2",
+        "sender": "agent",
+        "text": "Sorry about that, Nidhi. Could you share the UPI reference number?",
+        "timestamp": "2026-09-23T09:32:00Z"
+      },
+      {
+        "id": "TCK-1001-3",
+        "sender": "customer",
+        "text": "Sure, it is 4382910023.",
+        "timestamp": "2026-09-23T09:40:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TCK-1002",
+    "subject": "Cannot log in after password reset",
+    "description": "The reset link works but the new password is rejected on the login page.",
+    "priority": "medium",
+    "status": "in_progress",
+    "category": "Account",
+    "createdAt": "2026-09-22T14:05:00Z",
+    "customer": {
+      "name": "Ankur Khatri",
+      "email": "ankur.k@example.com",
+      "phone": "+91 2222888809 ",
+      "location": "Gurugram"
+    },
+    "messages": [
+      {
+        "id": "TCK-1002-1",
+        "sender": "customer",
+        "text": "I reset my password twice and still cannot sign in.",
+        "timestamp": "2026-09-22T14:05:00Z"
+      },
+      {
+        "id": "TCK-1002-2",
+        "sender": "agent",
+        "text": "Thanks. We found a stale session on your account and are clearing it now.",
+        "timestamp": "2026-09-22T14:50:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TCK-1003",
+    "subject": "Invoice shows the wrong company name",
+    "description": "Our GST invoice lists an old company name. We need it corrected before month-end filing.",
+    "priority": "medium",
+    "status": "open",
+    "category": "Billing",
+    "createdAt": "2026-09-22T08:30:00Z",
+    "customer": {
+      "name": "Sagar Gupta",
+      "email": "sagar@guptatraders.example.com",
+      "phone": "+91 2222888809 ",
+      "location": "Jaipur"
+    },
+    "messages": [
+      {
+        "id": "TCK-1003-1",
+        "sender": "customer",
+        "text": "Please reissue invoice TP26V000212 with the correct legal name.",
+        "timestamp": "2026-09-22T08:30:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TCK-1004",
+    "subject": "Mobile app crashes when opening the booking history screen and also drains battery quickly on Android 14 devices",
+    "description": "App closes immediately on the booking history tab. Started after last week's update. Happens on a Pixel 7 running Android 14.",
+    "priority": "high",
+    "status": "in_progress",
+    "category": "Technical",
+    "createdAt": "2026-09-21T17:45:00Z",
+    "customer": {
+      "name": "Kunal Mahor",
+      "email": "kunal.m@example.com",
+      "phone": "+91 2222888809 ",
+      "location": "Noida"
+    },
+    "messages": [
+      {
+        "id": "TCK-1004-1",
+        "sender": "customer",
+        "text": "The app force-closes every time I open Booking History.",
+        "timestamp": "2026-09-21T17:45:00Z"
+      },
+      {
+        "id": "TCK-1004-2",
+        "sender": "agent",
+        "text": "We can reproduce this. Engineering is working on a fix for the next release.",
+        "timestamp": "2026-09-21T18:20:00Z"
+      },
+      {
+        "id": "TCK-1004-3",
+        "sender": "customer",
+        "text": "Any timeline? I need my ticket details for travel.",
+        "timestamp": "2026-09-21T18:30:00Z"
+      },
+      {
+        "id": "TCK-1004-4",
+        "sender": "agent",
+        "text": "You can view them on the web dashboard meanwhile. Fix is expected within 3 days.",
+        "timestamp": "2026-09-21T18:41:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TCK-1005",
+    "subject": "Request to change delivery address",
+    "description": "I moved last week and need the pending order shipped to my new address.",
+    "priority": "low",
+    "status": "resolved",
+    "category": "Delivery",
+    "createdAt": "2026-09-20T11:00:00Z",
+    "customer": {
+      "name": "Anjali Rathor",
+      "email": "anjali.r@example.com",
+      "phone": "+91 2222888809 ",
+      "location": "Mumbai"
+    },
+    "messages": [
+      {
+        "id": "TCK-1005-1",
+        "sender": "customer",
+        "text": "Can the address on order #88213 be updated?",
+        "timestamp": "2026-09-20T11:00:00Z"
+      },
+      {
+        "id": "TCK-1005-2",
+        "sender": "agent",
+        "text": "Done. The order will now ship to your new address in Bandra.",
+        "timestamp": "2026-09-20T11:25:00Z"
+      },
+      {
+        "id": "TCK-1005-3",
+        "sender": "customer",
+        "text": "Thank you!",
+        "timestamp": "2026-09-20T11:30:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TCK-1006",
+    "subject": "Refund not received after cancellation",
+    "description": "Cancelled a hotel booking 10 days ago. The refund has not reached my bank account.",
+    "priority": "high",
+    "status": "open",
+    "category": "Refunds",
+    "createdAt": "2026-09-19T16:20:00Z",
+    "customer": {
+      "name": "Shruti Saraswat",
+      "email": "shruti.s@example.com",
+      "phone": "+91 2222888809 ",
+      "location": "Lucknow"
+    },
+    "messages": [
+      {
+        "id": "TCK-1006-1",
+        "sender": "customer",
+        "text": "It has been 10 days. Refund policy says 5-7 working days.",
+        "timestamp": "2026-09-19T16:20:00Z"
+      },
+      {
+        "id": "TCK-1006-2",
+        "sender": "agent",
+        "text": "We have escalated this to our finance team and will update you within 24 hours.",
+        "timestamp": "2026-09-19T17:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TCK-1007",
+    "subject": "How do I add a second traveller?",
+    "description": "I want to add my spouse to an existing booking but cannot find the option.",
+    "priority": "low",
+    "status": "resolved",
+    "category": "General",
+    "createdAt": "2026-09-18T10:10:00Z",
+    "customer": {
+      "name": "Aman Gwari",
+      "email": "aman.g@example.com",
+      "phone": "+91 2222888809 ",
+      "location": "Dehradun"
+    },
+    "messages": [
+      {
+        "id": "TCK-1007-1",
+        "sender": "customer",
+        "text": "Where can I add another passenger to my booking?",
+        "timestamp": "2026-09-18T10:10:00Z"
+      },
+      {
+        "id": "TCK-1007-2",
+        "sender": "agent",
+        "text": "Open the booking, choose Manage passengers, then Add traveller.",
+        "timestamp": "2026-09-18T10:22:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TCK-1008",
+    "subject": "Discount code SAVE10 is not applying",
+    "description": "The code shows as invalid at checkout even though it is valid until the end of the month.",
+    "priority": "medium",
+    "status": "in_progress",
+    "category": "Promotions",
+    "createdAt": "2026-09-17T13:40:00Z",
+    "customer": {
+      "name": "Nasim Khan",
+      "email": "nasim.k@example.com",
+      "phone": "+91 2222888809 ",
+      "location": "Bengaluru"
+    },
+    "messages": [
+      {
+        "id": "TCK-1008-1",
+        "sender": "customer",
+        "text": "SAVE10 keeps giving an invalid code error.",
+        "timestamp": "2026-09-17T13:40:00Z"
+      },
+      {
+        "id": "TCK-1008-2",
+        "sender": "agent",
+        "text": "We are checking whether the code is restricted to specific products.",
+        "timestamp": "2026-09-17T14:05:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TCK-1009",
+    "subject": "Passport name mismatch on e-ticket",
+    "description": "My e-ticket has a misspelt surname and the airline says it must match my passport.",
+    "priority": "high",
+    "status": "in_progress",
+    "category": "Bookings",
+    "createdAt": "2026-09-16T07:55:00Z",
+    "customer": {
+      "name": "Prakash Vishwakarma",
+      "email": "prakash.v@example.com",
+      "phone": "+91 2222888809 ",
+      "location": "Varanasi"
+    },
+    "messages": [
+      {
+        "id": "TCK-1009-1",
+        "sender": "customer",
+        "text": "Surname is spelt with a missing letter. Flight is in 5 days.",
+        "timestamp": "2026-09-16T07:55:00Z"
+      },
+      {
+        "id": "TCK-1009-2",
+        "sender": "agent",
+        "text": "Urgent. We have requested a name correction from the airline.",
+        "timestamp": "2026-09-16T08:10:00Z"
+      },
+      {
+        "id": "TCK-1009-3",
+        "sender": "customer",
+        "text": "Please confirm as soon as you hear back.",
+        "timestamp": "2026-09-16T08:15:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TCK-1010",
+    "subject": "Feature request: export bookings to CSV",
+    "description": "It would help our accounts team if we could export the booking list as a CSV file.",
+    "priority": "low",
+    "status": "open",
+    "category": "Feedback",
+    "createdAt": "2026-09-14T15:30:00Z",
+    "customer": {
+      "name": "Deepak Saraswat",
+      "email": "deepak.s@example.com",
+      "phone": "+91 2222888809 ",
+      "location": "Chandigarh"
+    },
+    "messages": [
+      {
+        "id": "TCK-1010-1",
+        "sender": "customer",
+        "text": "Please add a CSV export on the booking list page.",
+        "timestamp": "2026-09-14T15:30:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TCK-1011",
+    "subject": "Hotel voucher email never arrived",
+    "description": "Booking is confirmed on the dashboard but the voucher was never emailed.",
+    "priority": "medium",
+    "status": "resolved",
+    "category": "Bookings",
+    "createdAt": "2026-09-12T12:00:00Z",
+    "customer": {
+      "name": "Sujata Sen",
+      "email": "sujata.sen@example.com",
+      "phone": "+91 2222888809 ",
+      "location": "Kolkata"
+    },
+    "messages": [
+      {
+        "id": "TCK-1011-1",
+        "sender": "customer",
+        "text": "I did not get a voucher email. Please resend.",
+        "timestamp": "2026-09-12T12:00:00Z"
+      },
+      {
+        "id": "TCK-1011-2",
+        "sender": "agent",
+        "text": "Resent to your registered email. Please check spam too.",
+        "timestamp": "2026-09-12T12:15:00Z"
+      }
+    ]
+  }
+]
